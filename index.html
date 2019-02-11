@@ -19,11 +19,10 @@
 	<div class="container-fluid">
 	    <script id="oltg-list-template" type="text/template">
 	     <p>A list of tests: </p>
-	     <p>pathname: "{{ prefix }}"</p>
 	     <ul>
 	     {{#rows}}
 	     <li>
-	     <a href="{{ pathname }}view.html?mnemonic={{ mnemonic }}">{{ name }}</a>
+	     <a href="{{ prefix }}view.html?mnemonic={{ mnemonic }}">{{ name }}</a>
 	     </li>
 	     {{/rows}}
 	     </ul>
