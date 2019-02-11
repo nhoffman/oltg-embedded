@@ -1,6 +1,6 @@
-// var oltgApi = "https://oltgtest.labmed.uw.edu/public/api/v2/";
 // var oltgApi = "https://testguide.labmed.uw.edu/public/api/v2/";
-var oltgApi = "http://localhost:5000/api/v2/";
+var oltgApi = "https://oltgtest.labmed.uw.edu/public/api/v2/";
+// var oltgApi = "http://localhost:5000/api/v2/";
 
 function getUrlParameter(name) {
   name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');

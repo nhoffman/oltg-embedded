@@ -1,4 +1,4 @@
 # Proof of concept for a SPA using the OLTG API
 
-For example: https://nhoffman.github.io/oltg-embedded/?mnemonic=BMP
-
+* list of tests: https://nhoffman.github.io/oltg-embedded
+* single test: https://nhoffman.github.io/oltg-embedded/view.html?mnemonic=OPX
