@@ -27,6 +27,8 @@ function embedOLTGList(mnemonics) {
     let url = oltgApi + "search/?mnemonic=" + mnemonics;
     $.ajaxSetup({ cache: false });
     $.getJSON(url, function(data) {
+      // inject prefix for links, assuming that view.html is in the same path
+      data.prefix = location.pathname;
       var template = $("#oltg-list-template").html();
       var text = Mustache.render(template, data);
       $("#oltg-embed").html(text);

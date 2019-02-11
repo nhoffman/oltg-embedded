@@ -16,21 +16,23 @@
     </head>
 
     <body>
-      <div class="container-fluid">
-	<script id="oltg-list-template" type="text/template">
-	 <ul>
-	 {{#rows}}
-	 <li>
-	 <a href="/view.html?mnemonic={{ mnemonic }}">{{ name }}</a>
-	 </li>
-	 {{/rows}}
-	 </ul>
-	</script>
+	<div class="container-fluid">
+	    <script id="oltg-list-template" type="text/template">
+	     <p>A list of tests: </p>
+	     <p>pathname: "{{ prefix }}"</p>
+	     <ul>
+	     {{#rows}}
+	     <li>
+	     <a href="{{ pathname }}view.html?mnemonic={{ mnemonic }}">{{ name }}</a>
+	     </li>
+	     {{/rows}}
+	     </ul>
+	    </script>
 
-	<!-- template is rendered here -->
-	<div id="oltg-embed"></div>
+	    <!-- template is rendered here -->
+	    <div id="oltg-embed"></div>
 
-      </div>
+	</div>
     </body>
 </html>
 
