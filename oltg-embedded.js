@@ -24,7 +24,7 @@ function embedOLTGView() {
 
 function embedOLTGList(mnemonics) {
   $( document ).ready(function() {
-    let url = oltgApi + "search/?mnemonic=" + mnemonics;
+    let url = oltgApi + "search?order_by=name&mnemonic=" + mnemonics;
     $.ajaxSetup({ cache: false });
     $.getJSON(url, function(data) {
       // inject prefix for links, assuming that view.html is in the same path
