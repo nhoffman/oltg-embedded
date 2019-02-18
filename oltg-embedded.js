@@ -12,9 +12,7 @@ function getUrlParameter(name) {
 function embedOLTGView() {
   $( document ).ready(function() {
     let code = getUrlParameter('code');
-    console.log(code);
     let url = oltgApi + "view" + '?code=' + code;
-    console.log(url);
     $.ajaxSetup({ cache: false });
     $.getJSON(url, function(data) {
       var template = $("#oltg-view-template").html();
